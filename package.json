@@ -9,20 +9,31 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "wtr --coverage",
+    "test:watch": "wtr --coverage --watch"
   },
   "dependencies": {
+    "@vaadin/router": "^2.0.0",
     "lit": "^3.3.0"
   },
   "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.17",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
     "@typescript-eslint/parser": "^8.32.0",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-esbuild": "^1.0.4",
+    "@web/test-runner": "^0.20.1",
+    "@web/test-runner-puppeteer": "^0.18.0",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-lit": "^2.1.1",
     "eslint-plugin-prettier": "^5.4.0",
     "prettier": "^3.5.3",
     "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }
