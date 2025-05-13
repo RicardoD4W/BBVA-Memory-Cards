@@ -28,6 +28,7 @@ export class BbvaHomeView extends BbvaHomeViewModel {
               name="username"
               id="username"
               autocomplete="off"
+              @input=${this.clearValidities}
             />
             <span class="bar"></span>
             <label class="label">
