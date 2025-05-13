@@ -3,7 +3,19 @@ import { CSSResult, CSSResultOrNative, css } from 'lit';
 export class BbvaLayoutTheme {
   static cssBase: CSSResult = css`
     :host {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
+    header {
+      height: 10%;
+    }
+
+    main {
+      height: 90%;
     }
   `;
 

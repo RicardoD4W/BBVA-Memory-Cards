@@ -2,6 +2,8 @@ import { CSSResultGroup, CSSResultOrNative, TemplateResult, html } from 'lit';
 import { BbvaLayoutTheme } from './css/bbva-layout.theme.css';
 import { BbvaLayoutViewModel } from './bbva-layout.viewmodel';
 
+import '@/shared/components/bbva-header/bbva-header.view';
+
 export class BbvaLayoutView extends BbvaLayoutViewModel {
   protected static finalizeStyles(
     styles?: CSSResultGroup | undefined,
@@ -10,7 +12,17 @@ export class BbvaLayoutView extends BbvaLayoutViewModel {
   }
 
   public render(): TemplateResult {
-    return html`<slot></slot>`;
+    return html`
+      <header>
+        <bbva-header></bbva-header>
+      </header>
+
+      <main>
+        <slot></slot>
+      </main>
+
+      <footer></footer>
+    `;
   }
 }
 
