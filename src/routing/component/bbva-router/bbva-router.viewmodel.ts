@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import { ROUTES } from '@/routing/routes';
+import { ROUTES } from '../../routes';
 import { Router } from '@vaadin/router';
 
 export class BbvaRouterViewModel extends LitElement {

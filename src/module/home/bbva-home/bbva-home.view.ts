@@ -2,7 +2,7 @@ import { CSSResultGroup, CSSResultOrNative, TemplateResult, html } from 'lit';
 import { BbvaHomeTheme } from './css/bbva-home.theme.css';
 import { BbvaHomeViewModel } from './bbva-home.viewmodel';
 
-import '@/shared/components/bbva-button/bbva-button.view';
+import '../../../shared/components/bbva-button/bbva-button.view';
 import { ref } from 'lit/directives/ref.js';
 
 export class BbvaHomeView extends BbvaHomeViewModel {

@@ -1,4 +1,4 @@
-import { checkNameValidity } from '@/shared/utils/functions';
+import { checkNameValidity } from '../../../shared/utils/functions';
 import { Router } from '@vaadin/router';
 import { LitElement } from 'lit';
 import { createRef } from 'lit/directives/ref.js';

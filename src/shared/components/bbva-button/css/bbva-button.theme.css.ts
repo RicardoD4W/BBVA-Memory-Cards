@@ -17,6 +17,10 @@ export class BbvaButtonTheme {
       border-radius: 0.25rem;
       border: none;
     }
+
+    [disabled] {
+      opacity: 0.5;
+    }
   `;
 
   static BbvaButtonTheme: CSSResultOrNative[] = [BbvaButtonTheme.cssBase];

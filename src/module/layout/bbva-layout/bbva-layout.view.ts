@@ -2,7 +2,7 @@ import { CSSResultGroup, CSSResultOrNative, TemplateResult, html } from 'lit';
 import { BbvaLayoutTheme } from './css/bbva-layout.theme.css';
 import { BbvaLayoutViewModel } from './bbva-layout.viewmodel';
 
-import '@/shared/components/bbva-header/bbva-header.view';
+import '../../../shared/components/bbva-header/bbva-header.view';
 
 export class BbvaLayoutView extends BbvaLayoutViewModel {
   protected static finalizeStyles(
