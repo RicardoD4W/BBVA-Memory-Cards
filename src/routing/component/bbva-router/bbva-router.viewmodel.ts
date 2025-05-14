@@ -15,12 +15,17 @@ export class BbvaRouterViewModel extends LitElement {
   connectedCallback(): void {
     super.connectedCallback();
     this._initRouter();
+    this._ensureHashUrl();
     this._addEventListeners();
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     this._removeEventListeners();
+  }
+
+  private _ensureHashUrl() {
+    this._router.navigate('/');
   }
 
   private _addEventListeners() {
