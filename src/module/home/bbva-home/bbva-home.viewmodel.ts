@@ -22,6 +22,7 @@ export class BbvaHomeViewModel extends LitElement {
     if (!checkNameValidity(name)) {
       input.setCustomValidity('Enter a valid name');
       input.reportValidity();
+      input.value = '';
       return;
     }
 
