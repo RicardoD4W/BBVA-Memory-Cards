@@ -37,7 +37,7 @@ Este proyecto es un juego de memoria desarrollado utilizando **Lit** y **Vite**.
 
 - **Lit**: Framework de componentes web para crear la interfaz de usuario.
 - **Vite**: Herramienta de construcción rápida para el desarrollo y la producción.
-- **@vaadin/router**: Router ligero para manejar la navegación en la aplicación.
+- **navigo**: Un enrutador JavaScript simple y sencillo.
 - **TypeScript**: Lenguaje utilizado para escribir el código de la aplicación.
 - **ESLint y Prettier**: Herramientas para mantener la calidad del código y el formato consistente.
 - **Vite PWA Plugin**: Para convertir la aplicación en una Progressive Web App.
