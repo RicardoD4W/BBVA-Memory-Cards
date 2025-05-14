@@ -20,6 +20,10 @@ Cada vez que se haga click en el botón comenzar, se mostrarán 9 cuadros donde 
 
 Una vez se cumpla el tiempo, los números desaparecen, y el jugador tiene que seleccionar la posición donde se encuentra el número que se le pide. Si acierta, el fondo de la casilla se marcará en verde, se actualizarán los puntos y el juego continuará generando otro cuadro con otros nuevos números. Si por el contrario falla, la casilla mostrará el número que contiene con fondo rojo y la partida terminará.
 
+# Video ejemplo
+
+![Video de ejemplo](https://bbvaengineering.github.io/challenges/assets/images/memory.gif)
+
 La aplicación deberá funcionar offline, es decir, si en nuestro dispositivo activamos el modo avión y volvemos a la app tras haberla abierto al menos una vez, se podrá acceder a la misma sin problemas.
 
 La aplicación deberá estar desplegada y disponible públicamente.

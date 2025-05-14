@@ -12,10 +12,10 @@ Antes de ejecutar el proyecto localmente, asegúrate de tener las siguientes her
 
 1. Clona el repositorio:
 
-   ```bash
-   git clone https://github.com/RicardoD4W/BBVA-Memory-Cards.git
-   cd BBVA-Memory-Cards
-   ```
+```bash
+git clone https://github.com/RicardoD4W/BBVA-Memory-Cards.git
+cd BBVA-Memory-Cards
+```
 
 2. Instala las dependencias:
 
