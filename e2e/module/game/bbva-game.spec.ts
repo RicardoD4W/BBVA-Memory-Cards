@@ -4,7 +4,11 @@ test.describe('bbva-game', () => {
   test('selecciona dificultad medium, juega y detiene el juego', async ({
     page,
   }) => {
-    await page.goto('/game?username=Pepe');
+    await page.goto('http://localhost:5173');
+    const input = page.locator('input[name="username"]');
+    const button = page.getByRole('button', { name: 'Join' });
+    await input.fill('Pepe');
+    await button.click();
 
     await expect(page.getByText(/select the 'level'/i)).toBeVisible();
 
@@ -22,7 +26,11 @@ test.describe('bbva-game', () => {
   });
 
   test('selecciona dificultad high y elige una carta', async ({ page }) => {
-    await page.goto('/game?username=Pepe');
+    await page.goto('http://localhost:5173');
+    const input = page.locator('input[name="username"]');
+    const button = page.getByRole('button', { name: 'Join' });
+    await input.fill('Pepe');
+    await button.click();
 
     const select = page.locator('select[name="difficulty"]');
     await select.selectOption('high');
@@ -44,7 +52,11 @@ test.describe('bbva-game', () => {
   test('inicia una partida y ver cartas cuando esten dadas la vuelta', async ({
     page,
   }) => {
-    await page.goto('/game?username=Pepe');
+    await page.goto('http://localhost:5173');
+    const input = page.locator('input[name="username"]');
+    const button = page.getByRole('button', { name: 'Join' });
+    await input.fill('Pepe');
+    await button.click();
 
     const select = page.locator('select[name="difficulty"]');
     await select.selectOption('high');
