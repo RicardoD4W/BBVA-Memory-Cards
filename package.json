@@ -39,5 +39,8 @@
     "vite": "^6.3.5",
     "vite-plugin-pwa": "^1.0.0",
     "vite-tsconfig-paths": "^5.1.4"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.6.1"
   }
 }

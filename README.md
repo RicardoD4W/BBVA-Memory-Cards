@@ -52,6 +52,7 @@ Este proyecto es un juego de memoria desarrollado utilizando **Lit** y **Vite**.
 - `npm run format`: Ejecuta Prettier para formatear el código.
 - `npm run test`: Ejecuta las pruebas unitarias.
 - `npm run test:watch`: Ejecuta las pruebas unitarias en modo de observación (watch mode).
+- `npm run e2e`: Ejecuta las pruebas end to end.
 
 ## Características adicionales incluidas
 
@@ -64,3 +65,4 @@ Este proyecto es un juego de memoria desarrollado utilizando **Lit** y **Vite**.
 - Uso de múltiples principios como `SOLID`
 - Uso de `Screaming Architecture` como arquitectura principal del proyecto
 - Testing `E2E`
+- `CI/CD` con Github Actions
