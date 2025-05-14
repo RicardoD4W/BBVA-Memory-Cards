@@ -1,6 +1,5 @@
-import { LitElement } from 'lit';
+import { LitElement, PropertyValues } from 'lit';
 import { state } from 'lit/decorators.js';
-// import { Router } from '@vaadin/router';
 
 import { DifficultSelector } from './components/bbva-difficulty-selector/models/difficult.model';
 import { DifficultChangedEvent } from './components/bbva-difficulty-selector/events/difficult-changed.event';
@@ -8,6 +7,7 @@ import { GameCardFlippedEvent } from './components/bbva-game-card/events/game-ca
 
 import { checkNameValidity } from '../../../shared/utils/functions';
 import { GameEngineService } from './services/game-engine.service';
+import { RouterNavigateEvent } from '../../../routing/component/bbva-router/events/router-navigate.event';
 
 export class BbvaGameViewModel extends LitElement {
   // game
@@ -22,7 +22,7 @@ export class BbvaGameViewModel extends LitElement {
   };
 
   // user
-  protected username: string = '';
+  @state() protected username: string = '';
 
   // cards
   @state() protected isFlipped: boolean = false;
@@ -38,14 +38,16 @@ export class BbvaGameViewModel extends LitElement {
   //services
   private readonly _gameEngineService = new GameEngineService();
 
-  connectedCallback(): void {
-    super.connectedCallback();
+  protected firstUpdated(_changedProperties: PropertyValues): void {
+    super.firstUpdated(_changedProperties);
 
-    const params = new URLSearchParams(window.location.search);
+    const hashParts = window.location.hash.split('?');
+    const queryString = hashParts[1] ?? '';
+    const params = new URLSearchParams(queryString);
     const username = params.get('username');
 
     if (!username || !checkNameValidity(username)) {
-      window.location.hash = '#/';
+      this.dispatchEvent(new RouterNavigateEvent({ to: '/' }));
       return;
     }
 

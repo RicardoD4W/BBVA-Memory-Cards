@@ -15,8 +15,8 @@
     "e2e": "playwright test"
   },
   "dependencies": {
-    "@vaadin/router": "^2.0.0",
-    "lit": "^3.3.0"
+    "lit": "^3.3.0",
+    "navigo": "^8.11.1"
   },
   "devDependencies": {
     "@open-wc/testing": "^4.0.0",

@@ -10,7 +10,7 @@ export class BbvaRouterView extends BbvaRouterViewModel {
   }
 
   public render(): TemplateResult {
-    return html`<slot></slot>`;
+    return html``;
   }
 }
 

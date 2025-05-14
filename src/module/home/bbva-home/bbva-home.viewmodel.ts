@@ -1,7 +1,7 @@
 import { checkNameValidity } from '../../../shared/utils/functions';
-// import { Router } from '@vaadin/router';
 import { LitElement } from 'lit';
 import { createRef } from 'lit/directives/ref.js';
+import { RouterNavigateEvent } from '../../../routing/component/bbva-router/events/router-navigate.event';
 
 export class BbvaHomeViewModel extends LitElement {
   protected formRef = createRef();
@@ -26,7 +26,9 @@ export class BbvaHomeViewModel extends LitElement {
       return;
     }
 
-    window.location.hash = `#/game?username=${name}`;
+    this.dispatchEvent(
+      new RouterNavigateEvent({ to: `/game?username=${name}` }),
+    );
   }
 
   protected handleSubmitButtonForm() {

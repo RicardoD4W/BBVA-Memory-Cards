@@ -1,8 +1,8 @@
-// import { Router } from '@vaadin/router';
 import { LitElement } from 'lit';
+import { RouterNavigateEvent } from '../../../routing/component/bbva-router/events/router-navigate.event';
 
 export class BbvaHeaderViewModel extends LitElement {
   protected goHome() {
-    window.location.hash = '#/';
+    this.dispatchEvent(new RouterNavigateEvent({ to: '/' }));
   }
 }
