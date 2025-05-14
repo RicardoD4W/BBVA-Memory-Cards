@@ -37,6 +37,9 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Init project in dev mode
+        run: npm run dev
+
       - name: Run e2e tests
         run: npm run e2e
 
