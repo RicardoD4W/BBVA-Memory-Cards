@@ -11,7 +11,8 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
     "test": "wtr --coverage",
-    "test:watch": "wtr --coverage --watch"
+    "test:watch": "wtr --coverage --watch",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "@vaadin/router": "^2.0.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@open-wc/testing": "^4.0.0",
+    "@playwright/test": "^1.52.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.15.17",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
