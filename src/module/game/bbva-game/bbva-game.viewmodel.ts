@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import { state } from 'lit/decorators.js';
-import { Router } from '@vaadin/router';
+// import { Router } from '@vaadin/router';
 
 import { DifficultSelector } from './components/bbva-difficulty-selector/models/difficult.model';
 import { DifficultChangedEvent } from './components/bbva-difficulty-selector/events/difficult-changed.event';
@@ -45,7 +45,7 @@ export class BbvaGameViewModel extends LitElement {
     const username = params.get('username');
 
     if (!username || !checkNameValidity(username)) {
-      Router.go('/');
+      window.location.hash = '#/';
       return;
     }
 
