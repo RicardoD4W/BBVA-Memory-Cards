@@ -6,3 +6,5 @@ package-lock.json
 .yarn/
 .vscode/
 index.html
+vite.config.js
+web-test-runner.config.mjs
