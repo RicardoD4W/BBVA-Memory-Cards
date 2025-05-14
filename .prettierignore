@@ -8,3 +8,4 @@ package-lock.json
 index.html
 vite.config.js
 web-test-runner.config.mjs
+package.json
