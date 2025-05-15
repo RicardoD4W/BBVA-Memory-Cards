@@ -14,6 +14,8 @@ export class BbvaGameStatusTheme {
       justify-content: center;
       align-items: center;
 
+      height: 2.5rem;
+
       & .timer {
         font-weight: 700;
         font-size: larger;
@@ -24,6 +26,7 @@ export class BbvaGameStatusTheme {
       margin: 0;
       font-size: xx-large;
       font-weight: 700;
+      height: 2.5rem;
     }
   `;
 
