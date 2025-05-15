@@ -18,7 +18,6 @@ export class BbvaGameTheme {
       & .game-board {
         flex: 1;
         padding: 0.5rem;
-        margin-top: 0.5rem;
 
         display: flex;
         flex-direction: column;
