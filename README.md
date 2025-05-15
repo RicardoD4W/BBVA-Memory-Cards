@@ -56,13 +56,14 @@ Este proyecto es un juego de memoria desarrollado utilizando **Lit** y **Vite**.
 
 ## Características adicionales incluidas
 
+- Click en el título de la app ("Memory Cards") para regresar a la vista `home`.
 - `Contador de tiempo` indicando los segundos restantes para visualizar los números.
 - `Vibración` en el dispositivo cada vez que el usuario pierda.
-- `Persistencia de puntos` entre dificultades
-- Botón de `'Play'/'Stop'` para iniciar o parar el juego en cualquier punto
-- `Animaciones` para la mejora de UX
-- Uso de `MVVM` para los componentes
-- Uso de múltiples principios como `SOLID`
-- Uso de `Screaming Architecture` como arquitectura principal del proyecto
-- Testing `E2E`
-- `CI/CD` con Github Actions
+- `Persistencia de puntos` entre dificultades.
+- Botón de `'Play'/'Stop'` para iniciar o parar el juego en cualquier punto.
+- `Animaciones` para la mejora de UX.
+- Uso de `MVVM` para los componentes.
+- Uso de múltiples principios como `SOLID`.
+- Uso de `Screaming Architecture` como arquitectura principal del proyecto.
+- Testing `E2E`.
+- `CI/CD` con Github Actions.
