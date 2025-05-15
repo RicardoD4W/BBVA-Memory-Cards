@@ -11,7 +11,7 @@ export class BbvaLayoutTheme {
     }
 
     header {
-      height: 10%;
+      height: 8%;
     }
 
     main {
